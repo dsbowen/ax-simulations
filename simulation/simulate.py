@@ -11,8 +11,8 @@ RESULTS_DIR = "results"
 BATCH_SIZE = 10
 N_BATCHES = 500
 SIZE = 1000
-CONTROL = "No Payment"
-HAYSTACK = "Very Low Pay"
+CONTROL = "No_Payment"
+HAYSTACK = "Very_Low_Pay"
 
 def make_haystack(i, hay_df):
     df = hay_df.copy()

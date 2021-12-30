@@ -5,9 +5,10 @@
 This is a one-time setup.
 
 1. Load your python version e.g., `module load python/python-3.8.5`. Change `cluster_setup.sh`, `simulate.sh`, and `cluster_teardown.sh` to load the correct python version.
-2. In the root directory of the repo, create an environment with `python venv venv`
-3. Upgrade pip `python -m pip install -U pip`
-4. Install the requirements `pip install -r requirements.txt`
+2. In the root directory of the repo, create an environment with `python -m venv venv`
+3. Activate the virtual environment `. venv/bin/activate`
+4. Upgrade pip `python -m pip install -U pip`
+5. Install the requirements `pip install -r requirements.txt`
 
 If you run into an error, check that you're using the pip installed in the virtual environment, not the "gobal" pip:
 

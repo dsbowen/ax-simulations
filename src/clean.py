@@ -10,24 +10,24 @@ if __name__ == "__main__":
     df = pd.read_stata(os.path.join(DATA_DIR, RAW_DIR, "DellaVigna_Pope.dta"))
     df = df[(df.finished == 1) & ~df.treatment.isna()]
     treatment_names = {
-        1.3: "No Payment",
-        1.1: "1c PieceRate",
-        1.2: "10c PieceRate",
-        1.4: "4c PieceRate",
-        2: "Very Low Pay",
-        3.1: "1c RedCross",
-        3.2: "10c RedCross",
-        10: "Gift Exchange",
-        4.1: "1c 2Wks",
-        4.2: "1c 4Wks",
-        5.1: "Gain 40c",
-        5.2: "Loss 40c",
-        5.3: "Gain 80c",
-        6.1: "Prob.01 $1",
-        6.2: "Prob.5 2c",
-        7: "Social Comp",
+        1.3: "No_Payment",
+        1.1: "1c_PieceRate",
+        1.2: "10c_PieceRate",
+        1.4: "4c_PieceRate",
+        2: "Very_Low_Pay",
+        3.1: "1c_RedCross",
+        3.2: "10c_RedCross",
+        10: "Gift_Exchange",
+        4.1: "1c_2Wks",
+        4.2: "1c_4Wks",
+        5.1: "Gain_40c",
+        5.2: "Loss_40c",
+        5.3: "Gain_80c",
+        6.1: "Prob.01_$1",
+        6.2: "Prob.5_2c",
+        7: "Social_Comp",
         8: "Ranking",
-        9: "Task Signif"
+        9: "Task_Signif"
     }
     df = df.replace({"treatment": treatment_names})
     df["buttonpresses"] = df["buttonpresses"].fillna(0)
