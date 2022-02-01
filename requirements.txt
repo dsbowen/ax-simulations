@@ -3,3 +3,4 @@ pandas
 scikit-learn
 seaborn
 statsmodels
+git+https://gitlab.com/dsbowen/conditional-inference.git@master#egg=conditional-inference
